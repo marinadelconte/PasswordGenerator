@@ -16,5 +16,6 @@ Below is an image of the website:
 
 ## Credits
 While working on this assignment I used the following resources for assistance:
-
 https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
