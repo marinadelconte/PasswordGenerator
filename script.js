@@ -11,28 +11,35 @@ let password = "";
 function generatePassword() {
 
   let passwordLength = prompt("How long do you want the password?")
-  for (let i = 0; i < passwordLength; i++) {
-    password += "x";
-  }
-  if (confirm("Do you want to include lowercase letters?")) {
-    console.log("before updating build array", builtArray)
-    builtArray = [...builtArray, ...lowerAlphabet];
-    console.log("after updating build array", builtArray)
-  }
+  let passwordLengthNumbers = parseInt(passwordLength)
+  if (passwordLengthNumbers >= 8 && passwordLengthNumbers <= 128) {
 
-  if (confirm("Do you want to include uppercase letters?")) {
-    builtArray = [...builtArray, ...upperAlphabet];
-  }
+    
+    if (confirm("Do you want to include lowercase letters?")) {
+      console.log("before updating build array", builtArray)
+      builtArray = [...builtArray, ...lowerAlphabet];
+      console.log("after updating build array", builtArray)
+    }
 
-  if (confirm("Do you want to include numbers?")) {
-    builtArray = [...builtArray, ...numbers];
-  }
+    if (confirm("Do you want to include uppercase letters?")) {
+      builtArray = [...builtArray, ...upperAlphabet];
+    }
 
-  if (confirm("Do you want to include special characters?")) {
-    builtArray = [...builtArray, ...specialCharacters];
+    if (confirm("Do you want to include numbers?")) {
+      builtArray = [...builtArray, ...numbers];
+    }
+
+    if (confirm("Do you want to include special characters?")) {
+      builtArray = [...builtArray, ...specialCharacters];
+    }
+    for (let i = 0; i < passwordLength; i++) {
+      password += "x";
+    }
+  } else {
+    alert("Please select a password length between 8 and 128 characters");
   }
+  
 }
-
 function writePassword() {
   console.log("Button Pressed")
   let password = generatePassword();
