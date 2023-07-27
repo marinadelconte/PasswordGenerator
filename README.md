@@ -8,10 +8,11 @@ This is a random password generator created using JavaScript. When the "generate
 
 ## Usage
 
-The site can be accessed via the following url:
+The site can be accessed via the following url: https://marinadelconte.github.io/PasswordGenerator/ 
             
 
 Below is an image of the website:
+![Screenshot (5)](https://github.com/marinadelconte/PasswordGenerator/assets/137957098/0ebdf6a1-93c7-486b-9aed-a49ed28cfea8)
 
 
 ## Credits
