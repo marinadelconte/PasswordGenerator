@@ -5,11 +5,9 @@ let upperAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
 let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', "[", '\\', "]", '^', "_", '`', '{', '|', '}', '~'];
 
-let builtArray = [];
-let password = "";
-
 function generatePassword() {
-
+  let builtArray = [];
+  let password = "";
   let passwordLength = prompt("How long do you want the password?")
   let passwordLengthNumbers = parseInt(passwordLength)
   if (passwordLengthNumbers >= 8 && passwordLengthNumbers <= 128) {
